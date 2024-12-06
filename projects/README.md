@@ -144,3 +144,33 @@ Optional dependency:
 `pipenv install nltk --dev` 
 
 Note: no possibility to declare an optional dep 
+
+### Poetry
+
+`poetry new <project-name>`
+
+Install dependencies
+
+`poetry add <dependency>`
+
+`poetry add numpy` 
+
+`poetry add git+https://github.com/psf/black.git@21.10b0` 
+
+`poetry add "https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz"` 
+
+`poetry add seaborn==0.12.2`
+
+`poetry add matplotlib>3.9.0` 
+
+`poetry add urllib3` 
+
+Development dependency
+
+`poetry add --group dev pytest `
+
+Optional dependency:
+
+manually added.
+
+`poetry build`
