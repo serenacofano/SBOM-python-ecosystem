@@ -1,10 +1,9 @@
 [project]
-name = "pip-pdm"
+name = "pipenv-pdm"
 version = "0.0.1"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
-description = "A small example package"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -17,4 +16,4 @@ requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/pip-pdm"]
+packages = ["src/pipenv-pdm"]

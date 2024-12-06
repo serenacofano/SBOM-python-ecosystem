@@ -110,3 +110,37 @@ Note for hatch backend: it requires the following code to be added in the the py
 
 `[tool.hatch.metadata]
 allow-direct-references = true`
+
+### pipenv 
+
+Manually create the folder project and the source files
+
+create the Pipfile and Pipfile.lock
+
+`pipenv install`
+
+install dependencies:
+
+`pipenv install <dependnecy>`
+
+`pipenv install numpy` 
+
+`pipenv install git+https://github.com/psf/black.git@21.10b0` 
+
+`pipenv install "https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz"` 
+
+`pipenv install seaborn==0.12.2`
+
+`pipenv install matplotlib>3.9.0` 
+
+`pipenv install urllib3` 
+
+Development dependency
+
+`pipenv install pytest --dev`
+
+Optional dependency:
+
+`pipenv install nltk --dev` 
+
+Note: no possibility to declare an optional dep 
