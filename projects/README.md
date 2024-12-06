@@ -39,7 +39,24 @@ a distributable wheel and a source tarball (to test the correctness of the proje
 
 ### pip
 (https://packaging.python.org/en/latest/tutorials/packaging-projects)
-pip-hatchling
-pip-pdm
-pip-setuptools
 
+Projects are created manually.
+* `requirements.txt` contains the core dependencies
+* `dev-requirements.txt` contains development dependencies
+* `opt-requirements.txt` contains optional dependencies
+
+
+### hatch
+The projects are created by the command:
+
+```hatch new <project-name>```
+
+To build the project (in the projecto folder):
+
+`hatch build`
+
+Dependencies added manually.
+
+Build tool added manually.
+
+hatch-hatchling, hatch-pdm, hatch-setuptools
