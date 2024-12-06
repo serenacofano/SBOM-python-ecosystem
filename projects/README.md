@@ -45,6 +45,10 @@ Projects are created manually.
 * `dev-requirements.txt` contains development dependencies
 * `opt-requirements.txt` contains optional dependencies
 
+Note for hatch backend: it requires the following code to be added in the the pyproject.toml
+
+`[tool.hatch.metadata]
+allow-direct-references = true`
 
 ### hatch
 The projects are created by the command:
@@ -59,4 +63,50 @@ Dependencies added manually.
 
 Build tool added manually.
 
-hatch-hatchling, hatch-pdm, hatch-setuptools
+Note for hatch backend: it requires the following code to be added in the the pyproject.toml
+
+`[tool.hatch.metadata]
+allow-direct-references = true`
+
+### pdm
+
+Create the project:
+
+create a project folder, into the project folder run:
+
+`pdm init`
+
+Add core dependencies:
+
+`pdm add <dependency>`
+
+`pdm add numpy` 
+
+`pdm add black@git+https://github.com/psf/black.git@21.10b0` 
+
+`pdm add "https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz"` 
+
+`pdm add seaborn==0.12.2`
+
+`pdm add matplotlib>3.9.0` 
+
+`pdm add urllib3` 
+
+Add development and optional dependencies:
+
+`pdm add pytest --dev`
+
+`pdm add -G opt nltk`
+
+Install the dependencies:
+
+`pdm install`
+
+Build the package:
+
+`pdm build`
+
+Note for hatch backend: it requires the following code to be added in the the pyproject.toml
+
+`[tool.hatch.metadata]
+allow-direct-references = true`
