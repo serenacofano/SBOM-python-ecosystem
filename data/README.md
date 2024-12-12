@@ -1,8 +1,7 @@
 # Data
 
 This folder contains: 
-- the SBOM generated running the **SBOM generation tools** against the [python projects](https://github.com/serenacofano/SBOM-python-ecosystem/tree/main/projects) created.
-- The script to reproduce the tools' execution
+- the SBOMs generated running the **SBOM generation tools** against the [python projects](https://github.com/serenacofano/SBOM-python-ecosystem/tree/main/projects) created.
 
 ## SBOM generation tools used
 | **Tool**  | **Tool Version** | **CycloneDX Version** |

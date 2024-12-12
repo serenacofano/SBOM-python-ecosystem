@@ -1,2 +1,6 @@
 dist
 *.egg-info
+*.xml
+xml-to-json.py
+instructions.md
+*.sh
